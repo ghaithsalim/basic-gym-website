@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="./member.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <title>Membership</title>
+        
+    </head>
+
+    <body>
+
+   
+     <div class ="nav">
+       
+   
+            <img src="./images/nolimitslogo.jpg" width="30%" class="logo">
+
+            <ul>
+            <li> <a href="homepage.html">Homepage</a> </li>
+            <li> <a href="Aboutus.html">About us</a> </li>
+            <li> <a href="gym.html">Gym</a> </li>
+            <li> <a href="rules.html">Rules</a> </li>
+            <li> <a href="prices.html">pricing</a> </li>
+            <li> <a href="review.html">Reviews</a> </li>
+        </ul>
+    </div>
+ <div class="topic">
+        <p><h2>Sign up now!</h2></p> </div>
+    <div class="contact-section">
+        <form id="savedata" action="confirmation.html" method="post">
+            <div  class="fn"><label id ='firstName' for="firstName"> <b>First Name: </b></label> 
+                <input type="text" id="firstName1" name="firstName"> <br></div>
+                <div class="ln"> <label id = 'lastName' for="lastName"> <b>Last Name: </b></label> 
+                    <input type="text" id="lastName1" name="lastName"> <br></div>
+            <input type="text" class="contact-text" placeholder="Enter your phone number">
+
+            <div class="group">
+            <input type="checkbox" id="gender" name="gender" value="male"> 
+            <label for="male">Male</label>
+            <input type="checkbox" id="gender" name="gender" value="female">
+            <label for="female">Female</label>
+             </div>
+
+            <textarea class="contact-text" placeholder="Tell us about yourself"></textarea>
+
+            <div class="selection">
+            <p> <b>Choose your membership edition:</b></p>
+            <select name="edition">
+                <option value="Bronze">  Bronze  </option>
+                <option value="Silver">  Silver</option>
+                <option value="Gold">  Gold</option> <br>
+            </select>
+
+            <p><b> How long will you be with us? </b></p>
+            <select name="duration">
+                <option value="days30">30 Days</option>
+                <option value="days90">90 Days</option>
+                <option value="days180">180 Days</option>
+                <option value="days365">365 Days</option>
+            </select></div>
+        </div>
+            <input type="submit" class="contact-form-btn" value="Send">
+          </form>
+
+          <script>
+            const savedata = document.getElementById('savedata');
+            const firstName = document.getElementById('firstName1');
+            const lastName = document.getElementById('lastName1');
+
+            savedata.addEventListener ('submit', function(e){
+
+                e.preventDefault();
+
+                const firstNameValue = firstName1.value;
+                const lastNameValue = lastName1.value;
+
+                localStorage.setItem('first-name', firstNameValue);
+                localStorage.setItem('last-name', lastNameValue);
+
+                window.location.href = "confirmation.html";
+
+            })
+        </script>
+    </div>
+
+    <div class="footer3">
+        <footer>&copy; Copyright 2023 NoLimits Dubai. All rights reserved.</footer>
+           </div>
+  
+
+    </body>
+
+
+    

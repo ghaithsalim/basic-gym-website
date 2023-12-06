@@ -1,0 +1,146 @@
+*
+{
+    
+    height: auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  'Montserrat', sans-serif;;
+
+}
+
+
+.nav{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+  justify-content: space-between;
+  margin-left: 40%;
+  font-weight: bold;
+  
+}
+.logo{
+    width: 11%;
+    height: 20%;
+    cursor: pointer;
+    border-radius: 50%;
+   position: absolute;
+   top: 8px;
+   left: 60px;
+}
+.nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    
+  
+}
+.nav ul li a{
+    text-decoration: none;
+    color: #28282B;
+    text-transform: uppercase;
+
+}
+.nav ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #900d09;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+
+}
+.nav ul li:hover:after{
+    width: 100%;
+
+}
+
+.gymbody{
+    background-image: url(./images/spot.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.cover{
+    width: 1000px; ;
+    height: 400px;
+    margin-top: 80px;
+    display: flex;
+
+
+}
+.box{
+    margin: 20px;
+    width: 1000px;
+    height: 500px;
+    box-shadow: -1px 0 10px #000;
+    background-color: #28282B;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    margin-top: 20%;
+   
+}
+.box:hover{
+    transform: translateY(-10px);
+    transition: all ease 0.3s;
+}
+img{
+    width: 300px;
+    height: 300px;
+    display: flex;
+
+}
+.newfooter2{
+    
+    background: #9b100b;
+    font-size: 18px;
+    padding: 25px;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -40%;
+  
+} 
+p{
+    color: whitesmoke;
+}
+h2{
+    color: #d62620;
+}
+.choice button {
+    background:white;
+    padding: 22px 32px;
+    font-size: 14px;
+    font-weight: bold;
+    color:#900d09;
+    border: none;
+    outline:none;
+    box-shadow: 0px 16px 32px 0px rgb(0 0 0 / 6%);
+    float:right, initial;
+    margin-top: 150px;
+
+    
+}
+
+.choice button:hover {
+    background-color:#900d09;
+    color: white;
+    transition: .3s;
+    cursor:pointer;
+}
+
+.choice .Choice2 {
+    float: right;
+    background: #28282B;
+    color: white;
+    margin-top: 150px;
+   
+}

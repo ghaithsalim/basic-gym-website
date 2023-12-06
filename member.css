@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  body {
+    background:whitesmoke;
+    background-image: url(./images/contact.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    
+  }
+  .logo{
+    width: 120px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.topic h2 {
+    text-align: center;
+    color:#ddd;
+    width: 200px;
+    height: 50px;
+    transition: width 3s;
+}
+
+.topic h2:hover{
+    width:500px;
+}
+.nav{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+  justify-content: space-between;
+}
+  .nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 20px;
+    position: relative;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+.nav ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background:#7B1818;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.nav ul li:hover:after{
+    width: 100%;
+}
+.data {
+    max-width: 600px;
+    padding-left: 100px;
+    overflow: hidden;
+}
+
+
+.contact-text {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background: #28282B;
+    padding: 20px 40px;
+    padding-right: 40px 0;
+    outline: none;
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+.contact-text:focus {
+    box-shadow: 0 0 10px 4px #7B1818;
+}
+
+textarea.contact-text {
+    resize: none;
+    height: 120px;
+}
+
+.contact-form-btn {
+    padding-right: 20px 50px;
+    border: 0;
+    background: #7B1818;
+    color:#ddd;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-left: 45%;
+}
+
+.contact-form-btn:hover {
+    background: #28282B;
+}
+
+.selection {
+    font-size: 16pt;
+    color: #ddd;
+    margin-bottom:1%;
+    margin-top: 1%;
+    
+}
+select {
+    width: 30%;
+    height: 30px;
+    border-radius: 20px;
+    padding-left: 5px;
+    padding: 20px;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(255, 255, 255);
+    background-color:#28282B;
+    background-image: none;
+  
+    
+}
+
+
+select>option p {
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    background-color:#555;
+    background-image: none;
+    font-size: 18px;
+    height: 50px;
+    padding-top: 20px;
+    
+  
+}
+
+.group {
+padding: 8px 48px;
+margin: 8px;
+}
+
+input [type="checkbox"] {
+    display:flexbox;
+}
+
+label {
+    position: relative;
+    color:#ddd;
+    margin-right: 14%;
+}
+
+label::before {
+    content: '';
+    background-position:center;
+    background-size: contain;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left:-44px;
+    top:-8px;
+
+    transform: scale(0) rotateZ('180deg');
+    transition: all 0.4s cubic-bezier(0.54, 0.01, 0, 1.49 );
+}
+
+input [type="checkbox"]:checked + label::before {
+    transform: scale(1) rotateZ(0deg);
+}
+
+label ::after {
+    content: '';
+    border: 2px solid #7B1818;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: -42px;
+    top: -6px;
+    border-radius: 50%;
+}
+
+.footer3{
+    background: #900d09;
+    font-size: 18px;
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -35%;
+  }
+  #firstName1{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background: #28282B;
+    padding: 20px 40px;
+    padding-right: 40px 0;
+    outline: none;
+    color: #ffffff;
+    transition: 0.5s;
+
+  }
+  #lastname1{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background: #28282B;
+    padding: 20px 40px;
+    padding-right: 40px 0;
+    outline: none;
+    color: #ffffff;
+    transition: 0.5s;
+  }
+  
+
+
